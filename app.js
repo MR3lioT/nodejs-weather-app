@@ -16,7 +16,7 @@ app.set('view engine','ejs');                      //setting the ejs as the temp
 app.post('/',function(req,res){
                                                           // Retrieving weather datas from open weather api when user submitting the query//
 const unit = "metric";
-const key = "8d1a8b0b32407ecd79179b50f8779c04";
+const key = "your opeanweather API key";
 var query = req.body.city;
 const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid=" +key+"&units="+unit+"";
 
